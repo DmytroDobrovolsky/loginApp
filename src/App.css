@@ -1,0 +1,55 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputCont {
+    width: 650px;
+    flex-direction: column;
+    height: 450px;
+    display: flex;
+    border: 2px solid #050001;
+    background-color: #32407B;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.contForH1Icon {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: center;
+}
+
+.iconReg {
+    margin-top: 20px;
+    height: 50px !important;
+    width: 60px !important;
+    color: #5F6F94 !important;
+}
+
+.h1 {
+    font-size: 45px;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    margin-right: 95px;
+}
+
+@media (max-width: 576px) {
+    .App {
+        max-width: 576px;
+        height: 99vh;
+    }
+
+    .inputCont {
+        width: 400px;
+        height: 350px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+}

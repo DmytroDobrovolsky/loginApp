@@ -1,0 +1,25 @@
+.Home {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    height: 80px;
+    background-color: #5F6F94;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+    padding-top: 4px;
+}
+
+@media (max-width: 576px) {
+    .button {
+        width: 100px;
+        height: 70px;
+    }
+}
