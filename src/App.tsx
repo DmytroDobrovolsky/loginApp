@@ -8,7 +8,7 @@ import SaveToLocal from './components/Pages/Registration/SaveToLocal/SaveToLocal
 import NamesInpVal from './components/Pages/Registration/NamesInpVal/NamesInpVal'
 import LogIn from './components/Pages/LogIn/LogIn';
 import Home from './components/Pages/Home/Home';
-import InputsVal from './components/Pages/LogIn/InputsVal';
+import "./components/Pages/LogIn/InputsVal.css"
 import EditIcon from '@mui/icons-material/Edit';
 
 const App = () => {

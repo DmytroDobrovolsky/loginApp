@@ -11,8 +11,6 @@ type User = {
 
 const InputsVal = ({ email, password, setPassValid, setEmailValid }: User) => {
   const [valid, setValid] = useState(false);
-  const [id, setId] = useState("");
-  const [pass, setPass] = useState("");
   const [remMe, setRemMe] = useState(false);
 
   const navigate = useNavigate();
@@ -28,8 +26,6 @@ const InputsVal = ({ email, password, setPassValid, setEmailValid }: User) => {
         setEmailValid(true);
         setValid(validPass);
         setPassValid(validPass);
-        setId(parsedUser.email);
-        setPass(parsedUser.password);
       } catch (err) {
         console.error("Відсутній користувач:", err);
       }
