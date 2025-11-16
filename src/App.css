@@ -5,17 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.inputCont {
-    width: 650px;
-    flex-direction: column;
-    height: 450px;
-    display: flex;
-    border: 2px solid #050001;
-    background-color: #32407B;
-    border-radius: 15px;
-    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .contForH1Icon {
@@ -40,16 +31,26 @@
     margin-right: 95px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 360px) and (max-width: 932px) {
     .App {
-        max-width: 576px;
-        height: 99vh;
+        min-width: 360px;
     }
 
-    .inputCont {
-        width: 400px;
-        height: 350px;
-        border-radius: 10px;
-        padding-bottom: 20px;
+    .contForH1Icon {
+        width: 300px;
+    }
+
+    .h1 {
+        font-size: 35px;
+        width: 120px;
+        height: 40px;
+        margin-right: 80px;
+    }
+
+    .iconReg {
+        margin-top: 10px;
+        height: 40px !important;
+        width: 50px !important;
+        justify-content: none;
     }
 }

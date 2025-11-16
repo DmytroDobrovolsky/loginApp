@@ -1,0 +1,28 @@
+.regButCont {
+    margin-top: 5px;
+    display: flex;
+    width: 300px;
+    justify-content: end;
+    margin-left: 250px;
+}
+
+.regBtn {
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+@media (min-width: 360px) and (max-width: 932px) {
+    .regButCont {
+        margin-top: 2px;
+        width: 100px;
+        margin-left: 150px;
+    }
+
+    .regBtn {
+        height: 30px;
+        width: 40px;
+        border-radius: 3px;
+    }
+
+}

@@ -1,0 +1,114 @@
+.logIn {
+  width: 800px;
+  flex-direction: column;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.contForH1Icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputsCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 330px;
+  border: 2px solid black;
+  background-color: #32407B;
+  border-radius: 15px;
+  padding-top: 25px;
+}
+
+.groupCont {
+  display: flex;
+}
+
+.errorCont {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 70px;
+  padding-top: 20px;
+}
+
+.errorP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  color: red;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.h1LogIn {
+  font-size: 45px;
+  width: 130px;
+  height: 50px;
+  margin-right: 60px;
+}
+
+.keyIcon {
+  margin-top: 20px;
+  font-size: 80px !important;
+  color: #5F6F94 !important;
+}
+
+.btnContLogIn {
+  width: 220px;
+  height: 100px;
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.btnLogIn {
+  height: 50px;
+  width: 90px;
+  background-color: #515585;
+  color: black;
+  border: 1px solid #050001;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+@media (min-width: 360px) and (max-width: 932px) {
+  .logIn {
+    width: 360px;
+    height: 500px;
+  }
+
+  .inputsCont {
+    width: 300px;
+  }
+
+  .btnContLogIn {
+    width: 150px;
+    height: 100px;
+  }
+
+  .errorCont {
+    width: 100px;
+    height: 115px;
+  }
+
+  .errorP {
+    width: 100px;
+    height: 50px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+}
