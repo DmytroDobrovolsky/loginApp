@@ -3,8 +3,23 @@ import KeyIcon from '@mui/icons-material/Key';
 import LogButt from "../Buttons/LogButt";
 import SaveBtn from "../Buttons/SaveBtn";
 import type { Props } from "../../../../Types/Types"
+import AddSavedUser from "../Logic/AddSavedUser";
+import { useEffect } from "react";
 
-const LogIn = ({ onChange, logInInpt, validLogInp, logBtnClick, savedUserDublic, saveBtnClick }: Props) => {
+const LogIn = ({ onChange, logInInpt, validLogInp, logBtnClick, savedUserDublic, saveBtnClick, setLogInInpts }: Props) => {
+  
+ 
+  const addSavedUs = () => {
+    const user = AddSavedUser();
+    if (user) {
+      setLogInInpts({ email: user.email, password: user.password });
+    }
+  }
+  
+  useEffect(() => {
+    addSavedUs();
+  }, []);
+
   return (
     <div className="logIn">
       <div className="contForH1Icon">
@@ -43,3 +58,5 @@ const LogIn = ({ onChange, logInInpt, validLogInp, logBtnClick, savedUserDublic,
   );
 };
 export default LogIn;
+
+

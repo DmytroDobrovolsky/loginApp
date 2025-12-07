@@ -37,6 +37,7 @@ export type Props = {
   onChange: (field: keyof InptsObj) => (e: React.ChangeEvent<HTMLInputElement>) => void;
   logBtnClick: () => void;
   saveBtnClick: () => void;
+  setLogInInpts: React.Dispatch<React.SetStateAction<InptsObj>>;
   logInInpt: InptsObj;
   validLogInp: ValidLogInp;
   savedUserDublic: boolean;

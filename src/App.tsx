@@ -81,7 +81,7 @@ const App = () => {
                 <RegistButt onClick={saveUserToLocalStorage} ></RegistButt>
               </>
             } />
-          <Route path="/LogIn" element={<LogIn onChange={handleChangeLogInp} logInInpt={logInInpt} validLogInp={validLogInp} savedUserDublic={savedUserDublic} logBtnClick={validLogInInpts} saveBtnClick={saveUserInfo} />} />
+          <Route path="/LogIn" element={<LogIn onChange={handleChangeLogInp} logInInpt={logInInpt} setLogInInpts={setLogInInpts} validLogInp={validLogInp} savedUserDublic={savedUserDublic} logBtnClick={validLogInInpts} saveBtnClick={saveUserInfo} />} />
           <Route path='/Home' element={<Home />} />
         </Routes>
       </ThemeProvider>
